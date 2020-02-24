@@ -15,6 +15,9 @@
 	<message key="plugins.generic.lucene.displayName">Модуль поиска «Lucene»</message>
 	<message key="plugins.generic.lucene.description">Обеспечивает поддержку нескольких языков, улучшает релевантность результатов поиска, ускоряет индексацию, улучшает масштабирование и так далее.</message>
 
+	<message key="plugins.generic.lucene.faceting.displayName">Фасетная классификация Lucene</message>
+	<message key="plugins.generic.lucene.faceting.facetBlockTitle">Блок фасетной классификации Lucene</message>
+	<message key="plugins.generic.lucene.faceting.description">Модуль блока фасетной классификации для Lucene</message>
 	<message key="plugins.generic.lucene.faceting.title">уточните поисковый запрос</message>
 	<message key="plugins.generic.lucene.faceting.discipline">Дисциплина</message>
 	<message key="plugins.generic.lucene.faceting.subject">Ключевое слово</message>
@@ -34,11 +37,11 @@
 
 	<message key="plugins.generic.lucene.rebuildIndex.couldNotDeleteFieldCache">Не удается удалить кэш полей. Пожалуйста, выполните «rm cache/fc-plugins-lucene-fieldCache.php» вручную с соответствующими правами.</message>
 	<message key="plugins.generic.lucene.rebuildIndex.pullResult">{$numMarked} статей помечено для обновления</message>
+	<message key="plugins.generic.lucene.rebuildIndex.pullWarning">Предупреждение: индекс для поиска в данный момент пуст, так как включена самостоятельная индексация сервером. Вам нужно дождаться, пока сервер SOLR загрузит изменения, или выполнить скрипт pull.sh, а затем load.sh из командной строки.</message>
 	<message key="plugins.generic.lucene.rebuildIndex.rebuildDictionaries">Перестройка словарей</message>
 	<message key="plugins.generic.lucene.rebuildIndex.updateBoostFile">Обновление данных статистики использования</message>
 	
 	<message key="plugins.generic.lucene.results.didYouMean">Вы имели в виду</message>
-
     <message key="plugins.generic.lucene.results.orderBy">Упорядочить результат по </message>
     <message key="plugins.generic.lucene.results.orderBy.relevance">Релевантности</message>
     <message key="plugins.generic.lucene.results.orderBy.author">Авторам</message>
@@ -49,9 +52,8 @@
     <message key="plugins.generic.lucene.results.orderDir.asc">По возрастанию</message>
     <message key="plugins.generic.lucene.results.orderDir.desc">По убыванию</message>
     <message key="plugins.generic.lucene.results.similarDocuments">похожие документы</message>
-
 	<message key="plugins.generic.lucene.results.syntaxInstructions"><![CDATA[
-		<h4>Советы по поиску:</h4><ul>
+		Советы по поиску:<ul>
 			<li>Поиск производится независимо от регистра (заглавные и строчные буквы не различаются)</li>
 			<li>Общие слова игнорируются</li>
 			<li>По умолчанию, в результатах поиска возвращаются статьи, содержащие <em>любое</em> слово из запроса (то есть, предполагается условие <em>OR</em>)</li>
